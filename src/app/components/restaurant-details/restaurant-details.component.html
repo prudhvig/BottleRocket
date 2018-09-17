@@ -1,0 +1,35 @@
+<app-header></app-header>
+<div class="card m-1 has-no-border restaurant-body">
+  <div class="card-body p-0 restaurant-body">
+    <agm-map [latitude]="restaurantDetails?.location?.lat" [longitude]="restaurantDetails?.location?.lng">
+      <agm-marker [latitude]="restaurantDetails?.location?.lat" [longitude]="restaurantDetails?.location?.lng"></agm-marker>
+    </agm-map>
+  </div>
+</div>
+
+<div class="card m-0 has-no-border restaurant-body">
+  <div class="card-body p-0 restaurant-body">
+    <div class="bg-restaurant">
+      <div class="ml-4">
+        <div class="rest-name">
+          {{restaurantDetails?.name}}
+        </div>
+        <div class="rest-category">
+          {{restaurantDetails?.category}}
+        </div>
+      </div>
+    </div>
+    <div class="ml-4">
+      <div class=" mt-3 mb-3">
+        {{restaurantDetails?.location?.formattedAddress}}
+      </div>
+      <div class="mt-3 mb-3">
+        {{restaurantDetails?.contact?.formattedPhone}}
+      </div>
+      <div *ngIf="restaurantDetails?.contact?.twitter" class=" mt-3 mb-3">
+        @{{restaurantDetails?.contact?.twitter}}
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

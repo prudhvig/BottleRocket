@@ -1,0 +1,55 @@
+body { padding-top: 50px; padding-bottom: 50px; }
+
+.navbar-footer,.navbar-header {
+    min-height: 3.5rem;
+    background-color: #43E895 !important;
+    color: #eee;
+}
+
+.bg-restaurant{
+    background-color: #43E895 !important;
+    color: #eee;
+    height: 60px !important;
+}
+
+.navbar-footer {
+    min-height: 3.5rem;
+    background-color: black !important;
+    color: #eee;
+    height: 50px !important;
+}
+
+a {
+    color: #f8f9fa;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+nav.navbar a{
+    color: white !important;
+}
+
+.rest-name{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.rest-category{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.router-link-active{
+    color: #ffffff;
+}
+
+
+.restaurant-body{
+    margin:1px !important;
+}
+
+.has-no-border{
+    border:0px !important
+}
